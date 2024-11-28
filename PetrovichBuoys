@@ -35,18 +35,18 @@ while True:
     current_lat = gpsd.fix.latitude
     current_lon = gpsd.fix.longitude
 
-    # Check if the buoy is at the target location
+    # Check if the buoy is at the home location
     if abs(current_lat - 27.183957) < 0.001 and abs(current_lon - (-93.644397)) < 0.001:
-        # Activate the propeller motor to rotate the buoy 37 degrees
+        # Activate the propeller motor to rotate the buoy 227 degrees
         activate_motor()
-        time.sleep(37 * rotation_time_per_degree)  # Adjust rotation time as needed
+        time.sleep(227 * rotation_time_per_degree)  # Adjust rotation time as needed
         deactivate_motor()
 
     # Check weather forecast for hurricane warnings
     if check_weather_forecast():
         # Activate emergency broadcast
         pifmrds.play_file("-freq 2450 -play8hr.wav")
-        # Send remote SSH command to your phone (implementation depends on your specific setup)
+        # Send remote SSH command to your I-phone
 
     # Add code to handle power management, error handling, and other necessary functionalities
 
