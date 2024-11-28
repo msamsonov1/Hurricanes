@@ -44,7 +44,7 @@ while True:
 
     # Check weather forecast for hurricane warnings
     if check_weather_forecast():
-        # Activate emergency broadcast
+        # Activate water molecule energy release frequency
         pifmrds.play_file("-freq 2450 -play8hr.wav")
         # Send remote SSH command to your I-phone
 
